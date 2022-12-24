@@ -1,0 +1,295 @@
+@font-face {
+    font-family: hm;
+    src: url(hm.otf);
+}
+
+/* .green {
+    color: green;
+    text-shadow: 1px 1px black;
+}
+
+.red {
+    color: red;
+    text-shadow: 1px 1px black;
+} */
+
+
+
+body {
+    /* background: linear-gradient(grey, darkgrey); */
+    background-image: url(https://cdn.pixabay.com/photo/2014/12/02/22/05/snowflakes-554635_1280.jpg);
+    background-position: center;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+#title {
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 15px;
+    background: linear-gradient(rgb(92, 97, 113), rgb(34, 33, 42));
+    color: black;
+    border: 3px solid black;
+    font-family: hm;
+    font-size: 46px;
+    font-weight: 700;
+    margin: 0px 0px 0px 0px;
+    text-shadow: 1px 1px red;
+    word-spacing: 10px;
+}
+
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 20px;
+    /* background-color: rgb(43, 53, 100); */
+    background-image: url(snowgif.gif);
+    background-position: top;
+    margin: 0 0 12px 0;
+}
+
+#word-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 140px;
+    border: 0px solid white;
+    margin: 50px 0 20px 0;
+    font-size: 96px;
+    text-shadow: 1px 1px black;
+}
+
+#generate-btn {
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 36px;
+    margin: 0;
+    width: 200px;
+    height: 50px;
+    color: whitesmoke;
+    background: linear-gradient(rgb(73, 79, 81), rgb(28, 28, 28));
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#generate-btn:hover {
+    border: 3px solid white;
+}
+
+#reset-btn {
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 36px;
+    margin: 0;
+    width: 200px;
+    height: 50px;
+    color: whitesmoke;
+    background: linear-gradient(rgb(73, 79, 81), rgb(28, 28, 28));
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#reset-btn:hover {
+    border: 3px solid white;
+}
+
+
+#players {
+    display: flex;
+    justify-content: center;
+}
+
+.player {
+    width: 178px;
+    height: 140px;
+    border: 5px solid black;
+    border-radius: 15px;
+    margin: 0 8px 8px 8px;
+    background: linear-gradient(rgb(92, 97, 113), rgb(34, 33, 42));
+}
+
+
+.player-name {
+    margin: 3px 0px 0px 0px;
+    font-size: 26px;
+
+}
+
+
+.player-score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 14px auto 11px auto;
+    font-size: 30px;
+    width: 50px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#player2:hover {
+    /* background-image: url(https://media2.giphy.com/media/Hogm5OjBxeNz2/giphy.gif?cid=790b761194385ae68c1969d5e2a118a15aa816004e101f7e&rid=giphy.gif&ct=g);
+    background-size: cover;
+    background-position: bottom; */
+    /* color: black; */
+}
+
+#player3:hover {
+    /* background-image: url(https://media0.giphy.com/media/Ykx1QoDMcBxxC/giphy.gif?cid=790b7611862fe37a6ff3e254cdd04b99576fcbc1ffce5e34&rid=giphy.gif&ct=g);
+    background-size: cover; */
+    /* background-position: bottom; */
+    /* color: black; */
+}
+
+#player4:hover {
+    /* background-image: url(https://media2.giphy.com/media/9FlAbDWF95S3C/giphy.gif?cid=790b7611187d8af62a91ce7029d78a70f08a39216aba3515&rid=giphy.gif&ct=g); */
+    /* background-size: cover; */
+    background-position: center;
+    /* color: black; */
+}
+
+.minus {
+    margin-top: 0px;
+    margin-right: 0.6px;
+    width: 60px;
+    height: 30px;
+    border-radius: 0px;
+    border: 3px solid black;
+    background: linear-gradient(rgb(73, 79, 81), rgb(28, 28, 28));
+    color: whitesmoke;
+    font-size: 56px;
+    line-height: 0;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus {
+    margin-top: 10px;
+    width: 60px;
+    height: 30px;
+    border-radius: 0px;
+    border: 3px solid black;
+    background: linear-gradient(rgb(73, 79, 81), rgb(28, 28, 28));
+    color: whitesmoke;
+    font-size: 40px;
+    line-height: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.plus:hover {
+    border: 3px solid whitesmoke;
+    color: green;
+}
+
+.minus:hover {
+    border: 3px solid whitesmoke;
+    color: red;
+}
+
+.player {}
+
+
+#p1m,
+#p2m,
+#p3m,
+#p4m,
+#p5m {
+    margin-top: 10px;
+}
+
+#btns1,
+#btns2,
+#btns3,
+#btns4,
+#btns5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+
+#player-name-change {
+    display: flex;
+}
+
+input {
+    color: whitesmoke;
+    background-color: black;
+    width: 125px;
+    border: none;
+}
+
+.player-lock-btn {
+    background: linear-gradient(rgb(73, 79, 81), rgb(28, 28, 28));
+    color: whitesmoke;
+    font-size: 15px;
+    border: 2px solid black;
+}
+
+.player-lock-btn:hover {
+    border: 2px solid whitesmoke;
+}
+
+
+#p1-name-change {
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: linear-gradient(rgb(73, 79, 81), rgb(28, 28, 28));
+}
+
+#p2-name-change {
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: linear-gradient(rgb(73, 79, 81), rgb(28, 28, 28));
+
+    margin-left: 20px;
+}
+
+#p3-name-change {
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: linear-gradient(rgb(73, 79, 81), rgb(28, 28, 28));
+
+    margin-right: 18px;
+    margin-left: 18px;
+}
+
+#p4-name-change {
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: linear-gradient(rgb(73, 79, 81), rgb(28, 28, 28));
+
+    margin-right: 20px;
+}
+
+#p5-name-change {
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: linear-gradient(rgb(73, 79, 81), rgb(28, 28, 28));
+}

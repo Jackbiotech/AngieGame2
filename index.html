@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title"><span class="green">Pictionary</span> with <span class="red">Angie</span></h1>
+    </header>
+    <section id="hero">
+        <h1 id="word-result"></h1>
+        <button id="generate-btn">Generate</button>
+        <button id="reset-btn">Reset</button>
+    </section>
+
+    <!-- Players -->
+    <div id="players">
+        <section id="player1" class="player">
+            <h3 id="player1-name" class="player-name">Player 1</h3>
+            <p id="player1-score" class="player-score"></p>
+            <div id="btns1">
+                <button id="p1m" class="minus">-</button>
+                <div id="plus1">
+                    <button id="p1p" class="plus">+</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="player2" class="player">
+            <h3 id="player2-name" class="player-name">Player 2</h3>
+            <p id="player2-score" class="player-score"></p>
+            <div id="btns2">
+                <button id="p2m" class="minus">-</button>
+                <div id="plus2">
+                    <button id="p2p" class="plus">+</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="player3" class="player">
+            <h3 id="player3-name" class="player-name">Player 3</h3>
+            <p id="player3-score" class="player-score"></p>
+            <div id="btns3">
+                <button id="p3m" class="minus">-</button>
+                <div id="plus3">
+                    <button id="p3p" class="plus">+</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="player4" class="player">
+            <h3 id="player4-name" class="player-name">Player 4</h3>
+            <p id="player4-score" class="player-score"></p>
+            <div id="btns4">
+                <button id="p4m" class="minus">-</button>
+                <div id="plus4">
+                    <button id="p4p" class="plus">+</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="player5" class="player">
+            <h3 id="player5-name" class="player-name">Player 5</h3>
+            <p id="player5-score" class="player-score"></p>
+            <div id="btns5">
+                <button id="p5m" class="minus">-</button>
+                <div id="plus5">
+                    <button id="p5p" class="plus">+</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Player name changes -->
+
+    <section id="player-name-change">
+        <div id="p1-name-change">
+            <input id="player1-name-input" type="text" placeholder="Player 1 Name:">
+            <button id="player1-lock-btn" class="player-lock-btn">+</button>
+
+        </div>
+
+        <div id="p2-name-change">
+            <input id="player2-name-input" type="text" placeholder="Player 2 Name:">
+            <button id="player2-lock-btn" class="player-lock-btn">+</button>
+
+        </div>
+
+        <div id="p3-name-change">
+            <input id="player3-name-input" type="text" placeholder="Player 3 Name:">
+            <button id="player3-lock-btn" class="player-lock-btn">+</button>
+
+        </div>
+
+        <div id="p4-name-change">
+            <input id="player4-name-input" type="text" placeholder="Player 4 Name:">
+            <button id="player4-lock-btn" class="player-lock-btn">+</button>
+
+        </div>
+
+        <div id="p5-name-change">
+            <input id="player5-name-input" type="text" placeholder="Player 5 Name:">
+            <button id="player5-lock-btn" class="player-lock-btn">+</button>
+
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
